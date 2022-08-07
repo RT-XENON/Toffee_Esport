@@ -1,0 +1,224 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: #00000042;
+}
+
+.content-scoreboard {
+    /* display: none; */
+    position: relative;
+    margin: 0 auto;
+    width: 40%;
+    height: 5%;
+}
+
+.content-scoreboard::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
+    background: var(--score-background);
+}
+
+.score-winner {
+    position: absolute;
+    top: 101%;
+    left: 45%;
+    transform: translate(-50%);
+    width: 17%;
+    height: 60%;
+    background: linear-gradient(to right, var(--flag-team-a-background-cooldown-alpha-100) 7%, var(--flag-team-b-background-cooldown-alpha-100) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score-winner span {
+    color: var(--score-time-color);
+    font-size: 2vh;
+}
+
+.content-scoreboard .content-center {
+    z-index: 1;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 25% 10% 25% 10% 25%;
+    grid-template-rows: 100%;
+}
+
+
+
+.content-scoreboard .content-center .time {
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: var(--score-time-background);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+
+}
+
+
+.content-scoreboard .content-center .time h1 { 
+    position: absolute;
+    top: 48%;
+    left: 48%;
+    transform: translate(-50% , -50%);
+    font-size: 2.5vh;
+    font-style: italic;
+    color: var(--score-time-color);
+}
+
+.content-scoreboard .content-center .score-point-team-a {
+    width: 162%;
+    height: 100%;
+    background: linear-gradient(90deg, var(--flag-team-a-background-alpha-0) 7%, var(--flag-team-a-background-alpha-100) 100%);
+    clip-path: polygon(35% 0%, 100% 0%, 65% 100%, 0% 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-scoreboard .content-center .score-point-team-a h1 { 
+    font-size: 3vh;
+    font-style: italic;
+    color: var(--flag-team-a-color);
+}
+
+.content-scoreboard .content-center .score-point-team-b .point-b {
+    margin-left: -60%;
+    width: 162%;
+    height: 100%;
+    background: linear-gradient(90deg, var(--flag-team-b-background-alpha-0) 7%, var(--flag-team-b-background-alpha-100) 100%);
+    clip-path: polygon(35% 0%, 100% 0%, 60% 100%, 0% 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-scoreboard .content-center .score-point-team-b .point-b h1 { 
+    margin-left: -5%;
+    font-size: 3vh;
+    font-style: italic;
+    color: var(--flag-team-b-color);
+}
+
+.content-scoreboard .content-center .team-a {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vmin;
+    color: var(--flag-team-a-color);
+}
+
+.content-scoreboard .content-center .team-b {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vmin;
+    color: var(--flag-team-b-color);
+}
+
+.team-a-cooldown {
+    display: none;
+    position: relative; 
+    top: -2%;
+    left: 2%;
+    width: 10%;
+    height: 10%;
+}
+
+.team-a-cooldown::before {
+    z-index: 1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3%;
+    height: 100%;
+    background: var(--flag-team-a-base-background);
+    border-radius: 0.5vmin 0.5vmin 0.5vmin 0.5vmin;
+    box-shadow: 0 0 0.5vmin var(--flag-team-a-shadow);
+}
+
+.team-a-cooldown::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 40%;
+    background: linear-gradient(to right, var(--flag-team-a-background-cooldown-alpha-100) 7%, var(--flag-team-a-background-cooldown-alpha-0) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(100% 0, 81% 50%, 100% 100%, 0% 100%, 0 52%, 0% 0%);
+}
+    
+.team-a-cooldown h1 {
+    z-index: 1;
+    font-size: 2.5vh;
+    position: absolute;
+    left: 20%;
+    color: var(--flag-team-a-color);
+}
+
+.team-b-cooldown {
+    display: none;
+    position: absolute; 
+    top: 2%;
+    right: 2%;
+    width: 10%;
+    height: 10%;
+}
+
+.team-b-cooldown::before {
+    z-index: 1;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3%;
+    height: 100%;
+    background: var(--flag-team-a-base-background);
+    border-radius: 0.5vmin 0.5vmin 0.5vmin 0.5vmin;
+    box-shadow: 0 0 0.5vmin var(--flag-team-b-shadow);
+}
+
+.team-b-cooldown::after {
+    content: '';
+    position: absolute;
+    right: 2%;
+    width: 50%;
+    height: 40%;
+    background: linear-gradient(to right, var(--flag-team-b-background-cooldown-alpha-0) 7%, var(--flag-team-b-background-cooldown-alpha-100) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 19% 52%, 0% 0%);
+}
+    
+.team-b-cooldown h1 {
+    z-index: 1;
+    font-size: 2.5vh;
+    position: absolute;
+    right: 20%;
+    color: var(--flag-team-b-color);
+}

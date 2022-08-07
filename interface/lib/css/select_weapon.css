@@ -1,0 +1,151 @@
+.content-select-weapon {
+    display: none;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+
+
+
+.content-select-weapon h1 {
+    color: var(--ban-join-h1);
+    font-weight: bolder;
+    font-size: 3vh;
+}
+
+.content-select-weapon h2 {
+    color: var(--ban-join-h2);
+    font-weight: bolder;
+    font-size: 2vh;
+    margin-bottom: 4%;
+}
+
+.content-select-weapon .content-team {
+    margin: 0 auto;
+    width: 80%;
+    height: 65%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 44% 44%;
+    gap: 4%;
+    /* background: #000; */
+}
+
+.content-select-weapon .content-team .content-slect-team-a { 
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.content-select-weapon .content-team .time-remain {  
+    font-size: 2vh;
+    color: var(--ban-color-weapon-remain);
+}
+
+.content-select-weapon .content-team .content-slect-team-b { 
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.content-select-weapon .content-team .content-slect-team-b .time-remain {  
+    font-size: 2vh;
+    position: absolute;
+    bottom: -14%;
+    right: 11%;
+    color: var(--ban-color-weapon-remain);
+}
+
+
+.content-select-weapon .content-team .left {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 15% 74% 13%;
+    grid-template-rows: 100%;
+    gap: 1%
+}
+
+.content-select-weapon .content-team .left .img { 
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.content-select-weapon .content-team .left .img img { 
+    width: 100%;
+    height: 70%;
+}
+
+.content-select-weapon .content-team .left .team-slect-weapon {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4 , 23%);
+    grid-template-rows: 100%;
+    justify-content: center;
+    gap: 2%;
+}
+
+.content-select-weapon .content-team .left .team-slect-weapon .item { 
+    width: 100%;
+    height: 100%;
+}
+
+.content-select-weapon .content-team .left .team-slect-weapon .item .header {
+    position: relative;
+    width: 100%;
+    height: 85%;
+    margin-bottom: 2%;
+    background: var(--ban-background-weapon-main);
+    border-radius: 0.5vmin;
+} 
+
+.content-select-weapon .content-team .left .team-slect-weapon .item .header img { 
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 70%;
+    height: 50%;
+}
+
+.content-select-weapon .content-team .left .team-slect-weapon .item .header span { 
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: var(--ban-color-weapon-main);
+    font-size: 1.5vh;
+} 
+
+.content-select-weapon .content-team .left .team-slect-weapon .item .bottom {
+    width: 100%;
+    height: 13%;
+    font-size: 1.5vh;
+} 
+
+.content-select-weapon .content-team .left .team-slect-weapon .item .bottom .team-a-weapon-count { 
+
+    width: 100%;
+    height: 100%;
+  
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--ban-color-weapon-second);
+}
+
+.content-slect-team-a .team-a-weapon-count {
+    background: var(--select-weapon-count-a);
+}
+
+.content-slect-team-b .team-a-weapon-count {
+    background: var(--select-weapon-count-b);
+}

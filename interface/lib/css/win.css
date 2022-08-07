@@ -1,0 +1,108 @@
+.content-winner {
+    margin: 0 auto;
+    margin-top: 5%;
+    width: 80%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: 25%;
+    justify-content: center;
+    grid-template-rows: 100%;
+    gap: 2%;
+}
+
+.content-winner .left {
+    width: 100%;
+    height: 100;
+    background: linear-gradient(150deg, var(--winner-team-a-background-alpha-0) 0%, var(--winner-team-a-background-alpha-100) 55%);
+    border-radius: 0.4vmin;
+    padding: 2%;
+}
+
+.content-winner .left .header {
+    position: relative;
+    width: 100%;
+    height: 20%;
+}
+
+.content-winner .left .header img {
+    width: 20%;
+    height: 50%;
+}
+
+.content-winner .left .header h1 {
+    font-size: 2.5vh;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    color: #eaeaea;
+    
+}
+
+.content-winner .left .header h2 {
+    font-size: 2vh;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%);
+    color: #eaeaea;
+    
+}
+
+.content-winner .left .body {
+    width: 100%;
+    height: 70%;
+}
+
+.content-winner .left .body table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #d3d2d2;
+}
+
+.content-winner .left .body table th {
+    font-size: 1.7vh;
+    color: #fff
+}
+
+.content-winner .left .body table td {
+    font-size: 1.5vh;
+    padding: 2%;
+    text-align: center;
+}
+
+.content-winner .left .body table tr:nth-child(even) {
+    background: #f0f0f03f;
+
+}
+
+.content-winner .left .body table td:nth-child(1) {
+    width: 12%;
+    padding-left: 5%;
+}
+
+.content-winner .left .body table td:nth-child(2) { 
+    padding-left: 10%;
+    width: 50%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.content-winner .left .bottom {
+    position: relative;
+    width: 100%;
+    height: 10%;
+}
+
+.content-winner .left .bottom button {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #f0f0f0a4;
+    border: 0.1vmin solid #f0f0f023;
+    border-radius: 0.2vmin;
+    font-weight: bolder;
+}

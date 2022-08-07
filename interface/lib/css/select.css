@@ -1,0 +1,117 @@
+
+
+.content-join-team {
+    display: none;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+
+.content-join-team h1 {
+    color: var(--select-join-h1);
+    text-shadow: 0.2vmin 0.2vmin var(--select-join-h1-shadow);
+    font-weight: bolder;
+    font-size: 3vh;
+}
+
+.content-join-team h2 {
+    color: var(--select-join-h2);
+    text-shadow: 0.2vmin 0.2vmin var(--select-join-h2-shadow);
+    font-weight: bolder;
+    font-size: 2vh;
+    margin-bottom: 4%;
+}
+
+.content-join-team .content-team {
+    width: 100%;
+    height: 75%;
+    display: grid;
+    grid-template-columns: repeat(2 , 40%);
+    justify-content: center;
+    grid-template-rows: 100%;
+    gap: 5%;
+}
+
+.content-join-team .content-team .content-team-a {
+    padding: 2%;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, var(--team-a-alpha-0), var(--team-a-alpha-100));
+}
+
+.content-join-team .content-team .content-team-b {
+    padding: 2%;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, var(--team-b-alpha-0), var(--team-b-alpha-100));
+}
+
+
+.content-join-team .content-team .header {
+    width: 100%;
+    height: 30%;
+    margin-bottom: 5%;
+}
+
+.content-join-team .content-team .header img { 
+    width: 30%;
+    height: 70%;
+}
+
+.content-join-team .content-team .header p { 
+    letter-spacing: 0.2vmin;
+    font-weight: bolder;
+    color: #eaeaea;
+    font-size: 3vh;
+}
+
+.content-join-team .content-team .center {
+    padding: 2%;
+    display: grid;
+    grid-template-columns: repeat(2 , 49%);
+    grid-template-rows: repeat(6 , 12%);
+    gap: 1%;
+    width: 100%;
+    height: 59%;
+}
+
+.content-join-team .content-team .center .item { 
+    display: flex;
+    align-items: center;
+    padding-left: 4%;
+    padding-right: 4%;
+    background: var(--select-background-name);
+    color: var(--select-color-name);
+    font-size: 1.7vh;
+}
+
+.content-join-team .content-team .center .item .join-number { 
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    text-align: left;
+    width: 100%;
+}
+
+.content-join-team .content-team .center .item .join-number .join-name-user { 
+    margin-left: 5%;
+}
+
+.content-join-team .content-team .bottom { 
+    width: 100%;
+    height: 6%;
+} 
+
+.content-join-team .content-team .bottom button { 
+    font-size: 1.5vh;
+    width: 100%;
+    height: 100%;
+    color: var(--select-join-color);
+    background: var(--select-join-button);
+    border-radius: 0.5vmin;
+    border: none;
+} 

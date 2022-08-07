@@ -1,0 +1,222 @@
+.content-ban-team {
+    display: none;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+
+.ban-team-a-point {
+    display: none;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+  
+    background-image: linear-gradient(to bottom, var(--ban-team-a-alpha-0), var(--ban-team-a-alpha-100));
+}
+
+.ban-team-b-point {
+    display: none;
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+  
+    background-image: linear-gradient(to bottom, var(--ban-team-b-alpha-0), var(--ban-team-b-alpha-100));
+}
+
+.content-ban-team h1 {
+    color: var(--ban-join-h1);
+    font-weight: bolder;
+    font-size: 3vh;
+}
+
+.content-ban-team h2 {
+    color: var(--ban-join-h2);
+    font-weight: bolder;
+    font-size: 2vh;
+    margin-bottom: 4%;
+}
+
+.content-ban-team .content-team {
+    margin: 0 auto;
+    width: 80%;
+    height: 65%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 44% 10% 44%;
+    gap: 1%;
+    /* background: #000; */
+}
+
+.content-ban-team .content-team .content-ban-team-a { 
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.content-ban-team .content-team .content-ban-team-a .time-remain {  
+    font-size: 2vh;
+    position: absolute;
+    top: -14%;
+    right: 11%;
+    color: var(--ban-color-weapon-remain);
+}
+
+.content-ban-team .content-team .content-ban-team-b { 
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.content-ban-team .content-team .content-ban-team-b .time-remain {  
+    font-size: 2vh;
+    position: absolute;
+    bottom: -14%;
+    right: 11%;
+    color: var(--ban-color-weapon-remain);
+}
+
+
+.content-ban-team .content-team .left {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 15% 74% 13%;
+    grid-template-rows: 100%;
+    gap: 1%
+}
+
+.content-ban-team .content-team .left .img { 
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.content-ban-team .content-team .left .img img { 
+    width: 100%;
+    height: 70%;
+}
+
+.content-ban-team .content-team .left .team-ban-weapon {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4 , 23%);
+    grid-template-rows: 100%;
+    justify-content: center;
+    gap: 2%;
+}
+
+.content-ban-team .content-team .left .team-ban-weapon .item { 
+    width: 100%;
+    height: 100%;
+}
+
+.content-ban-team .content-team .left .team-ban-weapon .item .header {
+    position: relative;
+    width: 100%;
+    height: 85%;
+    margin-bottom: 2%;
+    background: var(--ban-background-weapon-main);
+    border-radius: 0.5vmin;
+} 
+
+.content-ban-team .content-team .left .team-ban-weapon .item .header img { 
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 70%;
+    height: 50%;
+}
+
+.content-ban-team .content-team .left .team-ban-weapon .item .header span { 
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: var(--ban-color-weapon-main);
+    font-size: 1.5vh;
+} 
+
+.content-ban-team .content-team .left .team-ban-weapon .item .bottom {
+    width: 100%;
+    height: 13%;
+    font-size: 1.5vh;
+} 
+
+.content-ban-team .content-team .left .team-ban-weapon .item .bottom .team-a-weapon-count { 
+    float: left;
+    width: 48%;
+    height: 100%;
+    background: var(--ban-background-weapon-second);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--ban-color-weapon-second);
+}
+
+.content-ban-team .content-team .left .team-ban-weapon .item .bottom .team-a-weapon-ban { 
+    float: right;
+    width: 48%;
+    height: 100%;
+    background: var(--ban-background-weapon-second);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--ban-color-weapon-second);
+}
+
+.content-ban-team .content-team .left .team-choose-ban {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 60%;
+    grid-template-rows: repeat(4 , 24%);
+    gap: 1%;
+}
+
+.content-ban-team .content-team .left .team-choose-ban .item {
+    width: 100%;
+    height: 100%;
+    background: var(--ban-background-weapon-ban);
+    border-radius: 1.0vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-ban-team .content-team .left .team-choose-ban .item img { 
+    width: 80%;
+    height: 100%;
+}
+
+.content-ban-team .content-team .content-ban-phase {
+    margin: 0 auto;
+    width: 66%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(8 , 12%);
+    grid-template-rows: 100%;
+    align-items: center;
+    gap: 2%;
+}
+
+.content-ban-team .content-team .content-ban-phase .item { 
+    width: 100%;
+    height: 17%;
+    background: var(--ban-background-weapon-ban-phase);
+    border-radius: 0.4vmin;
+}

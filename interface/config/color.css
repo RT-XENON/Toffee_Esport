@@ -1,0 +1,98 @@
+:root {
+    /* select team */
+
+        /* @ Shared */
+            --select-join-h1: #fff;
+            --select-join-h1-shadow: #b4b4b4;
+
+            --select-join-h2: #fff;
+            --select-join-h2-shadow: #b4b4b4;
+
+            /* @ background username */
+                --select-background-name: #0000003d;
+                --select-color-name: #d8d6d6;
+
+            /* @ button join team */
+                --select-join-button: #b3b3b370;
+                --select-join-color: #eaeaea;
+
+
+      /* @ team A */
+        --team-a-alpha-0: #79030300;
+        --team-a-alpha-100: #790303c4;
+
+      /* @ team B */
+        --team-b-alpha-0: #035b9600;
+        --team-b-alpha-100: #035b96ce;
+
+
+    /* ban team */
+        /* Shared */
+            --ban-join-h1: #fff;
+            --ban-join-h1-shadow: #b4b4b4;
+
+            --ban-join-h2: #fff;
+            --ban-join-h2-shadow: #b4b4b4;
+
+            --ban-background-weapon-main: #2b3432b6;
+            --ban-color-weapon-main: #eaeaea;
+            --ban-background-weapon-second: #2b3432b6;
+            --ban-color-weapon-second: #eaeaea;
+            --ban-background-weapon-ban: #2b343270;
+
+            --ban-color-weapon-remain: #eaeaea;
+
+            --ban-background-weapon-ban-phase: #2b3432b6;
+
+        /* @ team A */
+            --ban-team-a-alpha-0: #790303c4;
+            --ban-team-a-alpha-100: #79030300;
+
+        /* @ team B */
+            --ban-team-b-alpha-0: #035b9600;
+            --ban-team-b-alpha-100: #035b96ce;
+
+    /* choose weapon */
+        /* Shared */
+            --select-weapon-count-a: #7903038e;
+            --select-weapon-count-b: #035b969d;
+
+
+    /* scoreboard */
+        /* Shared */
+            --score-background: #000000a1;
+            --score-time-background: #000000;
+            --score-time-color: #fff;
+            --flag-team-a-base-background: #000;
+
+        /* TEAM A */
+            --flag-team-a-background-alpha-0: #ad0000c0;
+            --flag-team-a-background-alpha-100: #690000;
+            --flag-team-a-color: #fff;
+            --flag-team-a-background-cooldown-alpha-0: #ad00008e;
+            --flag-team-a-background-cooldown-alpha-100: #690000;
+            --flag-team-a-shadow: #920202;
+            
+
+        /* TEAM B */
+            --flag-team-b-background-alpha-0: #0020adc0;
+            --flag-team-b-background-alpha-100: #011261c0;
+            --flag-team-b-color: #fff;
+            --flag-team-b-background-cooldown-alpha-0: #01136186;
+            --flag-team-b-background-cooldown-alpha-100: #011361fd;
+            --flag-team-b-shadow: #0e12eb;
+        
+    
+    /* Winner */
+        /* Shared */
+            --winner-victory-team-background-alpha-0: #0449a3;
+            --winner-victory-team-background-alpha-100: #0475c0c4;
+
+        /* TEAM A */
+            --winner-team-a-background-alpha-0: #690000;
+            --winner-team-a-background-alpha-100: #070707b4;
+
+        /* TEAM B */
+            --winner-team-b-background-alpha-0: #1e84c9;
+            --winner-team-b-background-alpha-100: #070707b4;
+}
